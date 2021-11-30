@@ -1,0 +1,33 @@
+<html>
+  <head>
+<title>Welcome</title>
+  </head>
+  <body>
+
+    <h1 style="color:blue;">Employee Management System</h1>
+
+<div class="myDiv">
+<table id="tb"  width="50%" [cellSpacing]="10" [cellPadding]="5">
+<tr>
+<td><a routerLink="Home">Login</a></td>
+<td><a routerLink="Contact">Add Employee</a></td>
+<td><a routerLink="employee">Employee List</a></td>
+<td><a routerLink="About">Contact Us</a></td>
+</tr>
+
+</table>
+
+
+<hr/>
+<div>
+
+ 
+   <router-outlet></router-outlet>
+
+</div>
+
+</div>
+
+
+  </body>
+</html>

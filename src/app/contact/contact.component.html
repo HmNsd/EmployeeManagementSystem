@@ -1,0 +1,49 @@
+<div >
+<h2  style="background-color: lightseagreen;">Create Employee</h2>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+   
+    <div class="form-group">
+      <label for="name">&nbsp;First Name:- &nbsp; </label>
+      <input type="text" placeholder="Enter First Name"  class="form-control" id="firstName" required [(ngModel)]="employee.firstName" name="firstName">
+    </div>
+<br>
+    <div class="form-group" >
+      <label for="name">&nbsp;Last Name:- &nbsp;&nbsp; </label>
+      <input type="text"  placeholder="Enter Last Name" class="form-control" id="lastName" required [(ngModel)]="employee.lastName" name="lastName">
+    </div>
+<br>
+    <div class="form-group">
+      <label for="name">&nbsp;Email Id:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+      <input type="text" placeholder="Enter Email" class="form-control" id="emailId" required [(ngModel)]="employee.emailId" name="emailId">
+    </div><br>
+     <div class="form-group">
+      <label for="name">&nbsp;Contact:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</label>
+      <input type="text" placeholder="Enter Contact No." class="form-control" id="contact" required [(ngModel)]="employee.contact" name="contact">
+    </div><br>
+
+  <div class="form-group">
+      <label for="name">&nbsp;Department:-&nbsp;&nbsp;</label>
+      <input type="text" placeholder="Enter Department Name." class="form-control" id="department" required [(ngModel)]="employee.department" name="department">
+    </div><br>
+
+  <div class="form-group">
+      <label for="name">&nbsp;Designation:-&nbsp; </label>
+      <input type="text" placeholder="Designation" class="form-control" id="designation" required [(ngModel)]="employee.designation" name="designation">
+    </div><br>
+
+<div class="form-group">
+      <label for="name">&nbsp;Birth Date:-&nbsp;&nbsp;&nbsp;&nbsp; </label>
+      <input type="text" placeholder="Birth Date" class="form-control" id="birthDate" required [(ngModel)]="employee.birthDate" name="birthDate">
+    </div>
+
+<br>
+    <button type="submit" class="btn btn-success" style="background-color: green;">Submit</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4 style="color:green;"> You submitted successfully!</h4>
+  <!-- <button class="btn btn-success" (click)="newEmployee()">Add</button> -->
+</div>
+</div>
